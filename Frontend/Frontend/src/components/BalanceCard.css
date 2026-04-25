@@ -1,0 +1,121 @@
+.balance-card {
+  background: var(--accent);
+  border-radius: 24px;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-shadow: 0 12px 40px rgba(25,28,31,0.18);
+}
+
+/* Subtle geometric decorations */
+.bc-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.bc-circle-1 {
+  width: 220px; height: 220px;
+  background: rgba(255,255,255,0.05);
+  top: -80px; right: -60px;
+}
+.bc-circle-2 {
+  width: 160px; height: 160px;
+  background: rgba(255,255,255,0.04);
+  bottom: -50px; left: -40px;
+}
+
+.bc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bc-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.bc-amount {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.bc-eye {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.6);
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.bc-eye:hover {
+  background: rgba(255,255,255,0.18);
+  color: #ffffff;
+}
+
+.bc-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bc-chip {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+.bc-num {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 2px;
+}
+
+.bc-actions {
+  display: flex;
+  gap: 10px;
+}
+.bc-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.bc-btn span { font-size: 14px; }
+.bc-btn--primary {
+  background: #ffffff;
+  border: none;
+  color: var(--accent);
+}
+.bc-btn--primary:hover {
+  background: rgba(255,255,255,0.9);
+  transform: translateY(-1px);
+}
+.bc-btn--outline {
+  background: rgba(255,255,255,0.1);
+  border: 1.5px solid rgba(255,255,255,0.18);
+  color: #ffffff;
+}
+.bc-btn--outline:hover {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.28);
+}

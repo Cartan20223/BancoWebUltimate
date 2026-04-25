@@ -1,0 +1,80 @@
+.sidebar {
+  width: 72px;
+  background: #ffffff;
+  border-right: 1.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.sb-logo {
+  width: 38px; height: 38px;
+  background: var(--accent);
+  border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 32px;
+  flex-shrink: 0;
+  letter-spacing: -0.5px;
+}
+
+.sb-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  align-items: center;
+}
+
+.sb-nav-btn {
+  width: 44px; height: 44px;
+  background: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-faint);
+  font-size: 18px;
+  transition: var(--transition);
+  position: relative;
+}
+.sb-nav-btn:hover {
+  background: var(--surface);
+  color: var(--text-muted);
+}
+.sb-nav-btn.active {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.sb-nav-btn.active::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  width: 3px;
+  height: 55%;
+  background: var(--accent);
+  border-radius: 0 3px 3px 0;
+}
+
+.sb-logout {
+  width: 44px; height: 44px;
+  background: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-faint);
+  font-size: 18px;
+  transition: var(--transition);
+}
+.sb-logout:hover {
+  background: #fff5f5;
+  color: var(--danger);
+}
