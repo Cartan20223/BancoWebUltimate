@@ -30,6 +30,7 @@ Depósitos
 Transferencias entre cuentas
 Visualización de dashboard con datos en tiempo real
 CRUD básico integrado entre frontend y backend
+Contraseñas Encriptadas Con Bcrypt 
 
 
 
