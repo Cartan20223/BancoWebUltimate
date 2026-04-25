@@ -1,3 +1,4 @@
+https://youtu.be/5RURE_J0FrI
 🔗 Integración Frontend - Backend
 
 Se implementó la librería Gson en el backend para transformar las respuestas a formato JSON, permitiendo la correcta comunicación con el frontend. Anteriormente, el sistema trabajaba con texto plano, lo que limitaba la interoperabilidad con aplicaciones modernas.
