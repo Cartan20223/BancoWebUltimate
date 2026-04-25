@@ -20,6 +20,9 @@ Ejecutar la aplicación:
 npm start
 El frontend estará disponible en:
 http://localhost:3000
+
+
+
 🔄 Funcionalidades
 Registro de usuarios
 Inicio de sesión con manejo de sesión
@@ -27,8 +30,14 @@ Depósitos
 Transferencias entre cuentas
 Visualización de dashboard con datos en tiempo real
 CRUD básico integrado entre frontend y backend
+
+
+
+
+
 🧠 Notas Técnicas
 Uso de Gson para serialización de datos
 Implementación de CORS Filter para conexión entre cliente y servidor
 Arquitectura en capas (Controller, Service, DAO)
 Manejo de sesiones con HttpSession
+
